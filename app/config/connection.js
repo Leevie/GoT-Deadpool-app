@@ -3,7 +3,7 @@
 // *********************************************************************************
 
 //=========== SEQUELIZED! ===========
-
+var msql = require('mysql2');
 var Sequelize = require("sequelize");
 var mysql_db = mysql.createConnection(process.env.JAWSDB_URL);
 
