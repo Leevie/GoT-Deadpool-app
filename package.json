@@ -1,0 +1,18 @@
+{
+  "name": "gotdeadpool-app",
+  "version": "1.0.0",
+  "description": "deapool on GoT S.8,Ep 3",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.7.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Leevie Martin",
+  "license": "ISC"
+}
