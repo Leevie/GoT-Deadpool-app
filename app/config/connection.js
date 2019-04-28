@@ -7,8 +7,8 @@
 var Sequelize = require("sequelize");
 var mysql_db = mysql.createConnection(process.env.JAWSDB_URL);
 
-var sequelize = new Sequelize(mysql_db, "root", "root", {
-  host: "localhost",
+var sequelize = new Sequelize(mysql_db, "g2xngxairmj5k17b", "g2xngxairmj5k17b", {
+  host: "gk90usy5ik2otcvi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
   dialect: "mysql",
   pool: {
