@@ -1,284 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>Game of Thrones - DEADPOOL!!</title>
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <!-- Latest compiled and minified CSS & JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-  <!-- Chosen -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
-
 
 </head>
 
 <body>
 
   <div class="container">
+    <div class="jumbotron">
+      <h1>Game of Thrones - DEADPOOL!!</h1>
+      <h3>Take a poll on who will die in Season 8, Episode 4!!</h3>
+      <hr>
+      <!-- <a href="/" class="btn btn-danger btn-lg disabled">
+        <span class="fa fa-eye"></span> Search Characters</a> -->
+      <a href="/all" class="btn btn-danger btn-lg">
+        <span class="fa fa-th-list"></span> All Guesses</a>
+    </div>
+    <div class="row">
 
-    <h2>Survey Questions</h2>
-    <hr>
+      <div class="col-lg-12">
 
-    <h3><strong>About You</strong></h3>
-    <h4>Name (Required)</h4>
-    <input type="text" id="name" class="form-control" required>
+        <div class="card">
+          <div class="card-header">
+            Who do you think will die this episode?
+          </div>
+          <div class="card-body">
+              <form class="needs-validation" novalidate>
+                <h4><label for="name">Name (Required)</label></h4>
+                <input type="text" id="name" class="form-control" required>
+                <div class="invalid-feedback">
+                  Please fill in your name.
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <!-- </form> -->
 
-    <h4>Link to Photo Image (Required)</h4>
-    <input type="text" id="photo" class="form-control" required>
+                <label for="number1">Jon Snow</label>
+                <select class="custom-select custom-select-sm" id="char1" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+              
+                <label for="number2">Daenerys Targaryen</label>
+                <select class="custom-select custom-select-sm" id="char2" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Arya Stark</label>
+                <select class="custom-select custom-select-sm" id="char3" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Sansa Stark</label>
+                <select class="custom-select custom-select-sm" id="char4" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Bran Stark</label>
+                <select class="custom-select custom-select-sm" id="char5" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Tyrion Lannister</label>
+                <select class="custom-select custom-select-sm" id="char6" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
 
-    <hr>
+                <label for="number2">Varys</label>
+                <select class="custom-select custom-select-sm" id="char7" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                           <label for="number2">Jorah Mormont</label>
+                <select class="custom-select custom-select-sm" id="char8" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Jaime Lannister</label>
+                <select class="custom-select custom-select-sm" id="char9" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Cersei Lannister</label>
+                <select class="custom-select custom-select-sm" id="char10" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Samwell Tarly</label>
+                <select class="custom-select custom-select-sm" id="char11" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Tormund Giantsbane</label>
+                <select class="custom-select custom-select-sm" id="char12" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Brienne of Tarth</label>
+                <select class="custom-select custom-select-sm" id="char13" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+              
+                <label for="number2">Grey Worm</label>
+                <select class="custom-select custom-select-sm" id="char14" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+                <label for="number2">Missandei</label>
+                <select class="custom-select custom-select-sm" id="char15" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+              
+                <label for="number2">Podrick Payne</label>
+                <select class="custom-select custom-select-sm" id="char16" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+   
+              
+                <label for="number2">Theon Greyjoy</label>
+                <select class="custom-select custom-select-sm" id="char17" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+   
+              
+                <label for="number2">The Night King</label>
+                <select class="custom-select custom-select-sm" id="char18" required>
+                  <option value="" selected>Choose Wisely.</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
+              
+   
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-    <select class="custom-select" id="q1">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
 
-    <h3><strong>Question 2</strong></h3>
-    <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-    <select class="custom-select" id="q2">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <!-- <h3><strong>Question 3</strong></h3>
-    <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-    <select class="chosen-select" id="q3">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3><strong>Question 4</strong></h3>
-    <h4>You rarely do something just out of sheer curiosity.</h4>
-    <select class="chosen-select" id="q4">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3><strong>Question 5</strong></h3>
-    <h4>People can rarely upset you.</h4>
-    <select class="chosen-select" id="q5">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3><strong>Question 6</strong></h3>
-    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
-    <select class="chosen-select" id="q6">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3><strong>Question 7</strong></h3>
-    <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-    <select class="chosen-select" id="q7">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3><strong>Question 8</strong></h3>
-    <h4>You rarely get carried away by fantasies and ideas.</h4>
-    <select class="chosen-select" id="q8">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3><strong>Question 9</strong></h3>
-    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-    <select class="chosen-select" id="q9">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3><strong>Question 10</strong></h3>
-    <h4>You feel more energetic after spending time with a group of people.</h4>
-    <select class="chosen-select" id="q10">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select> -->
-
-    <br>
-    <br>
-
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
-
-    <hr>
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
-      </div>
-    </footer>
-
-  </div>
-
-  <!-- Modal -->
-  <div id="results-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
-
     </div>
   </div>
 
-  <script type="text/javascript">
-    // Chosen CSS
-    // var config = {
-    //   ".chosen-select": {},
-    //   ".chosen-select-deselect": {
-    //     allow_single_deselect: true
-    //   },
-    //   ".chosen-select-no-single": {
-    //     disable_search_threshold: 10
-    //   },
-    //   ".chosen-select-no-results": {
-    //     no_results_text: "Oops, nothing found!"
-    //   },
-    //   ".chosen-select-width": {
-    //     width: "95%"
-    //   }
-    // };
+  <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn">
+                <span class="fa fa-fire"></span>Submit Choices</button>
+            </div>
+          </div>
+        </div>
 
-    // for (var selector in config) {
-    //   $(selector).chosen(config[selector]);
-    // }
+      </div>
+    </div>
+  </div>
 
-    // Capture the form inputs
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
+</form>
 
-      // Form validation
-    //   function validateForm() {
-    //     var isValid = true;
-    //     $(".form-control").each(function() {
-    //       if ($(this).val() === "") {
-    //         isValid = false;
-    //       }
-    //     });
+  <!-- FORM VALIDATION TEST -->
+  <script>
+  let formArr = [];
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName("needs-validation");
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
 
-    //     $(".chosen-select").each(function() {
 
-    //       if ($(this).val() === "") {
-    //         isValid = false;
-    //       }
-    //     });
-    //     return isValid;
-    //   }
 
-      // If all required fields are filled
-    //   if (validateForm()) {
-        // Create an object for the user"s data
-        var userData = {
-          name: $("#name").val(),
-        //   photo: $("#photo").val(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            // $("#q3").val(),
-            // $("#q4").val(),
-            // $("#q5").val(),
-            // $("#q6").val(),
-            // $("#q7").val(),
-            // $("#q8").val(),
-            // $("#q9").val(),
-            // $("#q10").val()
-          ]
-        
-          
-        };
-        console.log(userData)
+  formArr = {
+    name: $("#name").val(),
+    jonSnow: $("#char1").val(),
+    daniT: $("#char2").val(),
+    arya: $("#char3").val(),
+    sansa: $("#char4").val(),
+    bran: $("#char5").val(),
+    tyrion: $("#char6").val(),
+    varys: $("#char7").val(),
+    jorah: $("#char8").val(),
+    jaime: $("#char9").val(),
+    cersei: $("#char10").val(),
+    samwell: $("#char11").val(),
+    tormund: $("#char12").val(),
+    brienne: $("#char13").val(),
+    greyworm: $("#char14").val(),
+    missandei: $("#char15").val(),
+    podrick: $("#char16").val(),
+    theon: $("#char17").val(),
+    nightking: $("#char18").val()
+  };
 
-        // AJAX post the data to the friends API.
-    //     $.post("/api/friends", userData, function(data) {
+  console.log(formArr);
 
-    //       // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-    //       $("#match-name").text(data.name);
-    //       $("#match-img").attr("src", data.photo);
+  // // send an AJAX POST-request with jQuery
+  $.post("/api/new", formArr)
+    // on success, run this callback
+    .done(function(data) {
+      // log the data we found
+      console.log(data);
 
-    //       // Show the modal with the best match
-    //       $("#results-modal").modal("toggle");
+      // $('#exampleModalLong').modal('show');
 
-    //     });
-    //   } else {
-    //     alert("Please fill out all fields before submitting!");
-    //   }
+  
+      console.log("GOT HERE AND SHOULDN'T HAVE")
     });
+
+    $("#name").val("");
+    $("#char1").val("");
+    $("#char2").val("");
+    $("#char3").val(""),
+    $("#char4").val(""),
+    $("#char5").val(""),
+    $("#char6").val(""),
+    $("#char7").val(""),
+    $("#char8").val(""),
+    $("#char9").val(""),
+    $("#char10").val(""),
+    $("#char11").val(""),
+    $("#char12").val(""),
+    $("#char13").val(""),
+    $("#char14").val(""),
+    $("#char15").val(""),
+    $("#char16").val(""),
+    $("#char17").val(""),
+    $("#char18").val("");
+
+
+
+
+
+      }, false);
+    });
+  }, false);
+})();
   </script>
-
-
+      <!-- END OF FORM VALIDATION TEST -->
+  <!-- <script src="js/add.js" type="text/javascript"></script> -->
 
 </body>
 

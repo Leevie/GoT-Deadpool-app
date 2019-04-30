@@ -15,14 +15,14 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/add.1.html"));
+    res.sendFile(path.join(__dirname, "../public/add.html"));
   });
 
   // add route loads the add.html page,
   // where users can enter new characters to the db
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/add.html"));
-  });
+  // app.get("/add", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/add.html"));
+  // });
 
   // all route loads the all.html page,
   // where all characters in the db are displayed

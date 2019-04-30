@@ -104,7 +104,7 @@ module.exports = function(app) {
       theon: req.body.theon,
       nightking: req.body.nightking
     }).then(function(results) {
-      // `results` here would be the newly created chirp
+     
       res.end();
     });
 
