@@ -2,6 +2,7 @@
 * How do I get a modal to work after the form has been submitted?
 * How do I get the page to validate correctly?
 * Validation still not working correctly -- writed data to DB even if invalid.  The front end shows invalid, though.
+* Need to add responsiveness for bg-images
 
 
 ## Characters included:
