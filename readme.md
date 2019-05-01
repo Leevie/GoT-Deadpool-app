@@ -37,3 +37,4 @@
 * Qyburn
 * Yara Greyjoy
 * Gregor "The Mountain" Clegane
+* Melisandre

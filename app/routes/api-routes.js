@@ -102,7 +102,8 @@ module.exports = function(app) {
       missandei: req.body.missandei,
       podrick: req.body.podrick,
       theon: req.body.theon,
-      nightking: req.body.nightking
+      nightking: req.body.nightking,
+      melisandre: req.body.melisandre
     }).then(function(results) {
      
       res.end();

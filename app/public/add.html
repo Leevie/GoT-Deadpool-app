@@ -33,6 +33,10 @@
       background-image: linear-gradient(whitesmoke, gray, whitesmoke);
       background-color: darkgray;
     }
+    form:disabled{ /* Doesn't work */
+      color: red;
+      background-color: red;
+    } 
   </style>
 </head>
 
@@ -220,8 +224,8 @@
    
               
                 <label for="number2">Theon Greyjoy</label>
-                <select class="custom-select custom-select-sm" id="char17" required>
-                  <option value="" selected>Choose Wisely.</option>
+                <select class="custom-select custom-select-sm" id="char17" disabled>
+                  <option value="" selected>DEAD.  Killed by the Night King.</option>
                   <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
                   <option value="DIES">DIES!! (Momma, no!!)</option>
                   <option value="LIVES">LIVES!! (We still in dis!)</option>
@@ -231,8 +235,8 @@
    
               
                 <label for="number2">The Night King</label>
-                <select class="custom-select custom-select-sm" id="char18" required>
-                  <option value="" selected>Choose Wisely.</option>
+                <select class="custom-select custom-select-sm" id="char18" disabled>
+                  <option value="" selected>DEAD.  Killed by Arya.</option>
                   <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
                   <option value="DIES">DIES!! (Momma, no!!)</option>
                   <option value="LIVES">LIVES!! (We still in dis!)</option>
@@ -240,6 +244,14 @@
                 </select>
               
    
+                <label for="number2">Melisandre</label>
+                <select class="custom-select custom-select-sm" id="char18" disabled>
+                  <option value="" selected>DEAD.  Killed by age?</option>
+                  <option value="WOUNDED">Wounded Badly! (Ouch. G'dammit!)</option>
+                  <option value="DIES">DIES!! (Momma, no!!)</option>
+                  <option value="LIVES">LIVES!! (We still in dis!)</option>
+                  <option value="UNDECIDED">Undecided. (Can't bare to think about it!)</option>
+                </select>
 
 
 <!-- Modal -->
@@ -316,7 +328,8 @@
     missandei: $("#char15").val(),
     podrick: $("#char16").val(),
     theon: $("#char17").val(),
-    nightking: $("#char18").val()
+    nightking: $("#char18").val(),
+    melisandre: $("char19").val()
   };
 
   console.log(formArr);
@@ -353,9 +366,7 @@
     $("#char16").val(""),
     $("#char17").val(""),
     $("#char18").val("");
-
-
-
+    $("#char19").val("");
 
 
       }, false);

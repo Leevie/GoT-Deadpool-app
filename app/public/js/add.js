@@ -27,7 +27,8 @@
     missandei: $("#char15").val(),
     podrick: $("#char16").val(),
     theon: $("#char17").val(),
-    nightking: $("#char18").val()
+    nightking: $("#char18").val(),
+    melisandre: $("#char19").val()
   };
 
   console.log(formArr);
@@ -64,6 +65,9 @@
     $("#char16").val(""),
     $("#char17").val(""),
     $("#char18").val("");
+    $("#char19").val("");
+
+
   
   // $.get("/all", function(req, res) {
   //   res.sendFile(path.join(__dirname, "../public/all.html"));

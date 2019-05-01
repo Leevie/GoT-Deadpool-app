@@ -34,7 +34,10 @@ $.get("/api", function(data) {
     $("#character-well-" + i).append("Missandei: " + data[i].missandei + "<br>");
     $("#character-well-" + i).append("Podrick Payne: " + data[i].podrick + "<br>");
     $("#character-well-" + i).append("Theon Greyjoy: " + data[i].theon + "<br>");
-    $("#character-well-" + i).append("The Night King: " + data[i].nightking + "<br>" + "\n=============================\n");
+    $("#character-well-" + i).append("The Night King: " + data[i].nightking + "<br>");
+    $("#character-well-" + i).append("Melisandre 'The Red Witch': " + data[i].nightking + "<br>" + "\n=============================\n");
+    
+
 
   }
 });
