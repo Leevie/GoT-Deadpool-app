@@ -28,7 +28,7 @@
     podrick: $("#char16").val(),
     theon: $("#char17").val(),
     nightking: $("#char18").val(),
-    melisandre: $("#char19").val()
+    // melisandre: $("#char19").val()
   };
 
   console.log(formArr);

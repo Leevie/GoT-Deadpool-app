@@ -24,7 +24,7 @@ var Character = sequelize.define("characters", {
     podrick: Sequelize.STRING,
     theon: Sequelize.STRING,
     nightking: Sequelize.STRING,
-    melisandre: Sequelize.STRING
+    // melisandre: Sequelize.STRING
 });
 
 Character.sync();

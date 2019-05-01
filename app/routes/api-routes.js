@@ -103,7 +103,7 @@ module.exports = function(app) {
       podrick: req.body.podrick,
       theon: req.body.theon,
       nightking: req.body.nightking,
-      melisandre: req.body.melisandre
+      // melisandre: req.body.melisandre
     }).then(function(results) {
      
       res.end();
