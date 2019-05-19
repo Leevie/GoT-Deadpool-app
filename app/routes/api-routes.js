@@ -75,6 +75,9 @@ module.exports = function(app) {
 
   app.post("/api/new", function(req, res) {
 
+    // Processes the data
+    // Routes process the handling of datagit 
+    
     console.log("Character Data:  ");
     console.log(req.body);
     // console.log(req.body.jonSnow);

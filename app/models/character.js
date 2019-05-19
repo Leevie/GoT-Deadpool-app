@@ -1,4 +1,5 @@
 // Setting up the table
+// Refer to this as the Schema
 
 var Sequelize = require("sequelize");
 var sequelize = require("../config/connection");
